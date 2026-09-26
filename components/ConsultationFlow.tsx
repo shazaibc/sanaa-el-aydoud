@@ -61,19 +61,41 @@ export default function ConsultationFlow({
           ))}
         </div>
 
-        {/* Middle Feature Banner: Moroccan Legal Desk & Deontological Fee Notice */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#0E1726] text-white p-6 sm:p-10 border border-[#232F42]">
-          <div className="lg:col-span-5 relative aspect-[16/10] overflow-hidden border border-[#9A7B46]/40">
-            <Image
-              src="/images/legal-library.jpg"
-              alt="Droit civil marocain jurisprudence"
-              fill
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover"
-            />
+        {/* Middle Feature Banner: Consultation in Action & Fee Notice */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-[#0E1726] text-white p-6 sm:p-10 border border-[#232F42]">
+          <div className="lg:col-span-6 space-y-4">
+            <div className="relative aspect-[16/10] overflow-hidden border border-[#9A7B46]/40 shadow-md">
+              <Image
+                src="/images/consultation-dossier.jpg"
+                alt="Consultation juridique et examen de dossier au Cabinet Sanaa"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover hover:scale-[1.02] transition-transform duration-700"
+              />
+              <div className="absolute bottom-2.5 left-2.5 right-2.5 bg-[#0E1726]/90 backdrop-blur-xs text-white text-[11px] px-3 py-1.5 border border-[#9A7B46]/40">
+                <span>
+                  {isArabic
+                    ? "جلسة تشخيص قانوني ودراسة الملفات بمكتب الدار البيضاء"
+                    : "Entretien d'analyse & stratégie sur-mesure — Cabinet Sanaa"}
+                </span>
+              </div>
+            </div>
+
+            <div className="relative aspect-[16/7] overflow-hidden border border-[#9A7B46]/30 hidden sm:block">
+              <Image
+                src="/images/legal-library.jpg"
+                alt="Jurisprudence et droit civil marocain"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+              <div className="absolute top-2 right-2 bg-[#0E1726]/80 text-[#D4B47C] text-[10px] px-2.5 py-0.5 border border-[#9A7B46]/30 uppercase tracking-wider">
+                {isArabic ? "القانون المدني والتجاري" : "Droit Positif Marocain"}
+              </div>
+            </div>
           </div>
 
-          <div className="lg:col-span-7 space-y-5">
+          <div className="lg:col-span-6 space-y-5">
             <div className="inline-flex items-center space-x-2 rtl:space-x-reverse px-2.5 py-1 bg-[#1A263A] border border-[#9A7B46]/40 text-[#D4B47C] text-xs uppercase tracking-wider">
               <ShieldCheck className="w-4 h-4 text-[#D4B47C]" />
               <span>{isArabic ? "ميثاق الشرف والأتعاب" : "Cadre Déontologique"}</span>

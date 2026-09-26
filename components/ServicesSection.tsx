@@ -1,8 +1,7 @@
-"use client";
-
 import React from "react";
+import Image from "next/image";
 import { Language, TranslationData } from "@/lib/translations";
-import { FileText, FolderSearch, Landmark, Check, ArrowRight } from "lucide-react";
+import { FileText, FolderSearch, Landmark, Check, ArrowRight, Scale, ShieldCheck } from "lucide-react";
 
 interface ServicesSectionProps {
   t: TranslationData;
@@ -40,7 +39,7 @@ export default function ServicesSection({
         </div>
 
         {/* 3 Core Services Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10 mb-16">
           {t.services.items.map((service, index) => {
             const Icon = serviceIcons[index % serviceIcons.length];
             return (
@@ -94,6 +93,66 @@ export default function ServicesSection({
               </div>
             );
           })}
+        </div>
+
+        {/* Feature Institutional Banner: Cour d'Appel de Casablanca */}
+        <div className="relative overflow-hidden bg-white border border-[#E0DCCE] shadow-xs">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-center">
+            <div className="lg:col-span-7 relative aspect-[16/9] w-full overflow-hidden bg-stone-100">
+              <Image
+                src="/images/casablanca-court.jpg"
+                alt="Cour d'Appel de Casablanca - Palais de Justice"
+                fill
+                sizes="(max-width: 1024px) 100vw, 60vw"
+                className="object-cover hover:scale-[1.02] transition-transform duration-700"
+              />
+              <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-auto bg-[#0E1726]/90 backdrop-blur-xs text-white text-[11px] px-3.5 py-1.5 border border-[#9A7B46]/40 flex items-center space-x-2 rtl:space-x-reverse">
+                <Landmark className="w-3.5 h-3.5 text-[#D4B47C]" />
+                <span>
+                  {isArabic
+                    ? "محكمة الاستئناف وقصر العدالة بالدار البيضاء"
+                    : "Cour d'Appel de Casablanca • Palais de Justice"}
+                </span>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5 p-8 sm:p-12 space-y-5">
+              <div className="inline-flex items-center space-x-2 rtl:space-x-reverse px-2.5 py-1 bg-[#F4F2EB] border border-[#DDD8CA] text-xs font-semibold uppercase tracking-wider text-[#9A7B46]">
+                <Scale className="w-3.5 h-3.5 text-[#9A7B46]" />
+                <span>
+                  {isArabic ? "الاختصاص القضائي" : "Juridictions du Royaume"}
+                </span>
+              </div>
+
+              <h3
+                className={`text-2xl sm:text-3xl font-normal text-[#0E1726] leading-snug ${
+                  isArabic ? "font-arabic-editorial" : "font-editorial"
+                }`}
+              >
+                {isArabic
+                  ? "حضور قوي وترافع صارم أمام سائر محاكم المملكة"
+                  : "Une défense rigoureuse et une plaidoirie stratégique"}
+              </h3>
+
+              <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed font-light">
+                {isArabic
+                  ? "من المحاكم الابتدائية والتجارية والإدارية إلى محكمة الاستئناف بالدار البيضاء ومحكمة النقض بالرباط، يضمن مكتب سناء تمثيلاً حازماً لحماية حقوقكم ومصالحكم المشروعة."
+                  : "Du Tribunal de Première Instance et de Commerce à la Cour d'Appel de Casablanca et la Cour de Cassation, le Cabinet Sanaa assure une présence ferme et continue pour faire triompher vos prétentions légitimes."}
+              </p>
+
+              <div className="pt-2">
+                <button
+                  onClick={() => onOpenBooking(isArabic ? "التمثيل القضائي" : "Représentation Judiciaire")}
+                  className="inline-flex items-center space-x-2 rtl:space-x-reverse bg-[#0E1726] hover:bg-[#1A263A] text-white px-5 py-3 text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer"
+                >
+                  <ShieldCheck className="w-4 h-4 text-[#D4B47C]" />
+                  <span>
+                    {isArabic ? "حجز استشارة قضائية" : "Confier votre dossier"}
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
