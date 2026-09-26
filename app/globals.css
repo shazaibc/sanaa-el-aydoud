@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fcfbf9;
+  --foreground: #111827;
+  --primary-navy: #0e1726;
+  --primary-navy-dark: #070d17;
+  --gold-accent: #9a7b46;
+  --gold-light: #d4b47c;
+  --card-bg: #ffffff;
+  --border-subtle: #e5e5e0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom editorial serif utilities */
+.font-editorial {
+  font-family: var(--font-serif), "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  letter-spacing: -0.015em;
+}
+
+.font-arabic-editorial {
+  font-family: var(--font-amiri), "Amiri", "Traditional Arabic", "Scheherazade New", serif;
+}
+
+/* Refined borders and lines */
+.border-legal {
+  border-color: #e8e6df;
+}
+
+.border-legal-subtle {
+  border-color: #f0eee9;
+}
+
+/* Watermark balance icon */
+.legal-watermark {
+  background-image: radial-gradient(rgba(154, 123, 70, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar for clean appearance */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f5f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d0c5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a395;
+}
