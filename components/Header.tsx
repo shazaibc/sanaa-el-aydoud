@@ -69,17 +69,21 @@ export default function Header({
           href="#"
           className="flex items-center space-x-3.5 rtl:space-x-reverse group"
         >
-          <div className="w-11 h-11 border border-[#9A7B46]/40 bg-[#0E1726] flex items-center justify-center text-[#D4B47C] font-serif text-lg font-bold tracking-tighter group-hover:border-[#9A7B46] transition-colors">
-            SA
+          <div className="relative w-12 h-12 overflow-hidden rounded-full border border-[#9A7B46]/40 bg-white p-0.5 group-hover:border-[#9A7B46] transition-colors shadow-xs">
+            <img
+              src="/images/cabinet-sanaa-logo.png"
+              alt="Cabinet Sanaa Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
           <div>
             <span className="block text-base sm:text-lg font-semibold tracking-tight text-[#0E1726] font-editorial uppercase">
-              {currentLang === "ar" ? "الأستاذة سناء العيدود" : "Me. Sanaa El Aydoud"}
+              {currentLang === "ar" ? "مكتب سناء" : "Cabinet Sanaa"}
             </span>
             <span className="block text-[11px] sm:text-xs text-[#6B7280] uppercase tracking-wider font-medium">
               {currentLang === "ar"
-                ? "محامية بهيئة الدار البيضاء"
-                : "Avocate au Barreau de Casablanca"}
+                ? "الأستاذة سناء العيدود • هيئة الدار البيضاء"
+                : "Me. Sanaa El Aydoud • Barreau de Casablanca"}
             </span>
           </div>
         </a>

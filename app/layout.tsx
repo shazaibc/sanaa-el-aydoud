@@ -22,12 +22,14 @@ const amiri = Amiri({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sanaa-el-aydoud.vercel.app"),
-  title: "Maître Sanaa El Aydoud | Avocate au Barreau de Casablanca",
+  metadataBase: new URL("https://cabinet-sanaa.vercel.app"),
+  title: "Cabinet Sanaa | Avocate au Barreau de Casablanca",
   description:
-    "Cabinet d'Avocat Maître Sanaa El Aydoud à Casablanca. Consultations juridiques, étude et suivi des dossiers, représentation devant toutes les juridictions marocaines. Contentieux civil, commercial, droit des sociétés, famille, pénal et fiscal.",
+    "Cabinet Sanaa — Maître Sanaa El Aydoud, avocate au Barreau de Casablanca. Consultations juridiques, étude et suivi des dossiers, représentation devant toutes les juridictions marocaines.",
   keywords: [
+    "Cabinet Sanaa",
     "Sanaa El Aydoud",
+    "مكتب سناء للمحاماة",
     "Avocat Casablanca",
     "Barreau de Casablanca",
     "Cabinet avocat Maroc",
@@ -40,11 +42,11 @@ export const metadata: Metadata = {
     "Contentieux fiscal Casablanca",
   ],
   authors: [{ name: "Maître Sanaa El Aydoud" }],
-  creator: "Cabinet Sanaa El Aydoud",
+  creator: "Cabinet Sanaa",
   openGraph: {
-    title: "Maître Sanaa El Aydoud | Avocate au Barreau de Casablanca",
+    title: "Cabinet Sanaa | Avocate au Barreau de Casablanca",
     description:
-      "Cabinet d'avocat au Barreau de Casablanca. Rigueur, discrétion et excellence juridique au service de vos droits et de votre entreprise.",
+      "Cabinet Sanaa — Cabinet d'avocat au Barreau de Casablanca. Rigueur, discrétion et excellence juridique au service de vos droits et de votre entreprise.",
     type: "website",
     locale: "fr_MA",
     images: [

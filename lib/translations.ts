@@ -413,7 +413,7 @@ export const translations: Record<Language, TranslationData> = {
     },
     contact: {
       badge: "Coordonnées",
-      title: "Cabinet Maître Sanaa El Aydoud",
+      title: "Cabinet Sanaa",
       subtitle: "Situé au cœur de Casablanca, accessible pour vos rendez-vous et correspondances judiciaires.",
       officeAddress: "Adresse du Cabinet",
       officeAddressValue: "Angle Boulevard Zerktouni & Boulevard d'Anfa, Quartier Gauthier, Casablanca, Maroc",
@@ -435,7 +435,7 @@ export const translations: Record<Language, TranslationData> = {
       sendViaWhatsApp: "Transmettre via WhatsApp Direct",
     },
     footer: {
-      disclaimer: "Cabinet d'Avocat Sanaa El Aydoud — Inscrite au tableau de l'Ordre des Avocats au Barreau de Casablanca. Site d'information professionnelle conforme aux dispositions de la loi n° 28-08 organisant l'exercice de la profession d'avocat au Maroc et au règlement intérieur de l'Ordre.",
+      disclaimer: "Cabinet Sanaa — Inscrite au tableau de l'Ordre des Avocats au Barreau de Casablanca. Site d'information professionnelle conforme aux dispositions de la loi n° 28-08 organisant l'exercice de la profession d'avocat au Maroc et au règlement intérieur de l'Ordre.",
       allRightsReserved: "Tous droits réservés.",
       barAssociation: "Barreau de Casablanca",
       ethicsNotice: "Secret Professionnel & Rigueur Déontologique",
@@ -719,7 +719,7 @@ export const translations: Record<Language, TranslationData> = {
     },
     contact: {
       badge: "معلومات الاتصال",
-      title: "مكتب الأستاذة سناء العيدود",
+      title: "مكتب سناء للمحاماة",
       subtitle: "مقر المكتب في موقع استراتيجي بقلب العاصمة الاقتصادية الدار البيضاء.",
       officeAddress: "عنوان المكتب",
       officeAddressValue: "ملتقى شارع الزرقطوني وشارع أنفا، حي كوتييه، الدار البيضاء، المغرب",
@@ -741,7 +741,7 @@ export const translations: Record<Language, TranslationData> = {
       sendViaWhatsApp: "إرسال عبر واتساب الفوري",
     },
     footer: {
-      disclaimer: "مكتب الأستاذة سناء العيدود — محامية بهيئة المحامين بالدار البيضاء. موقع مهني إخباري وفقاً للمقتضيات القانونية للقانون رقم 28-08 المنظم لمهنة المحاماة والنظام الداخلي للهيئة.",
+      disclaimer: "مكتب سناء للمحاماة — الأستاذة سناء العيدود، محامية بهيئة المحامين بالدار البيضاء. موقع مهني إخباري وفقاً للمقتضيات القانونية للقانون رقم 28-08 المنظم لمهنة المحاماة والنظام الداخلي للهيئة.",
       allRightsReserved: "جميع الحقوق محفوظة.",
       barAssociation: "هيئة المحامين بالدار البيضاء",
       ethicsNotice: "السر المهني والأمانة واجب أصيل",
@@ -1025,7 +1025,7 @@ export const translations: Record<Language, TranslationData> = {
     },
     contact: {
       badge: "Contact",
-      title: "Cabinet Maître Sanaa El Aydoud",
+      title: "Cabinet Sanaa",
       subtitle: "Conveniently situated in central Casablanca for client consultations and judicial correspondence.",
       officeAddress: "Office Address",
       officeAddressValue: "Intersection of Zerktouni & d'Anfa Boulevards, Gauthier District, Casablanca, Morocco",
@@ -1047,7 +1047,7 @@ export const translations: Record<Language, TranslationData> = {
       sendViaWhatsApp: "Send via Direct WhatsApp",
     },
     footer: {
-      disclaimer: "Cabinet Maître Sanaa El Aydoud — Admitted to the Casablanca Bar Association. Professional informational website in accordance with Moroccan Law No. 28-08 governing the legal profession.",
+      disclaimer: "Cabinet Sanaa — Me. Sanaa El Aydoud, admitted to the Casablanca Bar Association. Professional informational website in accordance with Moroccan Law No. 28-08 governing the legal profession.",
       allRightsReserved: "All rights reserved.",
       barAssociation: "Casablanca Bar Association",
       ethicsNotice: "Advocate Confidentiality & Professional Ethics",

@@ -16,18 +16,22 @@ export default function Footer({ t, currentLang }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#1E293B]">
           {/* Brand & Credential Col */}
           <div className="md:col-span-5 space-y-4">
-            <div className="flex items-center space-x-3 rtl:space-x-reverse">
-              <div className="w-10 h-10 border border-[#9A7B46]/50 bg-[#162030] flex items-center justify-center text-[#D4B47C] font-serif text-base font-bold">
-                SA
+            <div className="flex items-center space-x-3.5 rtl:space-x-reverse">
+              <div className="relative w-12 h-12 overflow-hidden rounded-full border border-[#9A7B46]/50 bg-white p-0.5">
+                <img
+                  src="/images/cabinet-sanaa-logo.png"
+                  alt="Cabinet Sanaa Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-base font-semibold text-white tracking-wide font-editorial">
-                  {currentLang === "ar" ? "الأستاذة سناء العيدود" : "Cabinet Me. Sanaa El Aydoud"}
+                  {currentLang === "ar" ? "مكتب سناء للمحاماة" : "Cabinet Sanaa"}
                 </h3>
                 <p className="text-xs text-[#D4B47C] tracking-wider uppercase">
                   {currentLang === "ar"
-                    ? "محامية بهيئة المحامين بالدار البيضاء"
-                    : "Avocate au Barreau de Casablanca"}
+                    ? "الأستاذة سناء العيدود • هيئة الدار البيضاء"
+                    : "Me. Sanaa El Aydoud • Barreau de Casablanca"}
                 </p>
               </div>
             </div>
